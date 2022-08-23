@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- user.xml 얘가 Mapper -->
+<!-- 설정이 들어가야함 -->
+<!-- mapper 안에 sql을 넣어주면 됨 -->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="Member">
+		
+		<select id="checkId" parameterType="String" resultType="int">
+			select count(*) from member where id=#{id}
+		</select>
+		
+		<select id="getMember" parameterType="String" resultType="member.LogonDataBean">
+			select * from member where id=#{id}
+		</select>
+		
+		<insert id="insertMember" parameterType="member.LogonDataBean">
+			insert into member values(#{id}, #{passwd}, #{name}, #{jumin1}, #{jumin2}, #{tel, jdbcType=VARCHAR}, #{email, jdbcType=VARCHAR}, #{reg_date} )
+		</insert>
+		
+		<delete id="deleteMember" parameterType="String">
+			delete from member where id=#{id}
+		</delete>
+		
+		<update id="modifyMember" parameterType="member.LogonDataBean">
+			update member set passwd=#{passwd}, tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR} where id = #{id}
+		</update>
+		
+	</mapper>

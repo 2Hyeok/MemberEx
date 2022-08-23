@@ -1,0 +1,115 @@
+/* 회원관리 */
+h1,h2,h3,h4,h5,h6 {
+	color: #FFA7A7;
+	margin-left: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: #CC3D3D;
+}
+ 
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	background-color: #FFFFFF;
+	font-size: 12px;
+	font-family: verdana;
+	color: orange;
+	padding: 4px;
+}
+
+table {
+	border: 2px solid #CC3D3D;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+
+table input {
+	margin : 5px;	
+}
+
+.input {
+	background-color: #FFFFFF;
+	border: 1px solid #CC3D3D;	
+}
+
+.input[type=text], .input[type=password] {
+	width: 150px;
+}
+	
+.inputbutton {
+	background-color: #FFFFFF;
+	color: #CC3D3D;
+	width: 70px;
+	font-size: 12px;
+	margin: 3px;
+}
+
+th {
+	background-color: #FFFFFF;
+	color: #FFA7A7;
+	font-size: 12px;
+	border: 1px solid #CC3D3D;
+	border-radius: 4px;
+	margin: 0px;
+	padding: 3px;
+	height: 30px;
+	width: 100px;
+}
+
+td {
+	background-color: #FFEAEA;
+	color: #CC3D3D;
+	font-size: 12px;
+	border: 1px solid #CC3D3D;
+	border-radius: 4px;
+	margin: 0px;	
+	height: 30px;
+	width: 250px;
+}
+
+span {
+	font-size: 1.3em;
+	color: red;
+	font-weight: bold;
+}
+
+center {
+	color: #CC3D3D;
+	font-size: 1.3em;
+}
+
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	color: #FFA7A7;
+	background-color: #FFFFFF;;
+	border-color: #FFEAEA;;
+	padding: .5em .5em .55em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0, .1);
+	width: 70px;
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
